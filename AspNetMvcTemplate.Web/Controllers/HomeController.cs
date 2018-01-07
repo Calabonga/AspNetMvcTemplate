@@ -1,13 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using AspNetMvcTemplate.Web.Infrastructure.Services;
 
 namespace AspNetMvcTemplate.Web.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly ILogService _logService;
+
+        public HomeController(ILogService logService)
+        {
+            _logService = logService;
+        }
         public ActionResult Index()
         {
             return View();
@@ -15,8 +18,9 @@ namespace AspNetMvcTemplate.Web.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
-
+            var message = "Your application description page.";
+            ViewBag.Message = message;
+            _logService.LogInfo(message);
             return View();
         }
 
