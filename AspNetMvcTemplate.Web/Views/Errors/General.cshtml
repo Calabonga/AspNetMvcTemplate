@@ -1,0 +1,13 @@
+﻿@model Exception
+@{
+    ViewData["Title"] = "Ошибка";
+}
+
+<div class="margin-sm">
+    <h1 class="text-danger">
+        @ViewData["Title"]
+    </h1>
+</div>
+<p class="lead">
+    @(Model?.Message ?? "Произошла непредвиденная ошибка, потому что что-то пошло не так.")
+</p>

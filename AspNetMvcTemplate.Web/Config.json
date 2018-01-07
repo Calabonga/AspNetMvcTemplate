@@ -1,0 +1,20 @@
+{
+  "UploadFolderName": "Uploads",
+  "DomainUrl": "http://www.calabonga.net",
+  "AdminEmail": "dev@calabonga.net",
+  "CompanyName": "Calabonga SOFT",
+  "SplittedLanguageMode": true,
+  "DefaultPageSize": 10,
+  "IsHtmlForEmailMessagesEnabled": true,
+  "IsLogging": true,
+  "RobotEmail": "noreply@calabonga.net",
+  "TopInDays": 30,
+  "AutoSaveOnEditEnabled": false,
+  "AutoSaveOnEditInterval": 5,
+  "EmailServer": {
+    "ServerSmtp": "smtp.yandex.ru",
+    "Secure": "SSL",
+    "Port": 465,
+    "UserName": "dev@calabonga.net"
+  }
+}
